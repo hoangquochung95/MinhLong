@@ -8,10 +8,9 @@
 <script src="{{ URL::asset("/js/particles.js")}}"></script>
 
 <body>
-@include('layout.header')
-
-
-@include('layout.footer')
+@extends ('layout.header')
+@extends ('layout.content')
+@extends ('layout.footer')
 <script src="{{ URL::asset("/js/bootstrap.js")}}"></script>
 </body>
 </html>
