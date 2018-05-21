@@ -1,0 +1,9 @@
+.header-bar{
+    box-shadow: 0 0 1px rgba(0,0,0,0.25);
+    transition: background-color 0.3s ease-in-out;
+
+}
+.header-bar .navbar-brand, .navbar-nav li a{
+    text-decoration: none;
+    color: #34495e;
+}
