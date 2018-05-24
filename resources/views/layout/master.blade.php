@@ -8,20 +8,18 @@
 <body>
 
 @include ('layout.header')
-<div id="particles-js">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-8">
-
-            </div>
-
+<div class="main_class container @yield('master_div_class')" id ="particles-js">
+    <div class="row">
+        <div class="col-md-4">
+            @yield('master_container_left')
         </div>
+        <div class="col-md-8">
+            @yield('master_container_right')
+        </div>
+
     </div>
 </div>
-@extends ('layout.footer')
+@include ('layout.footer')
 <script src="{{ URL::asset("/js/bootstrap.js")}}"></script>
 <script src="{{ URL::asset("/js/particles.js")}}"></script>
 <script src="{{ URL::asset("/js/main.js")}}"></script>
