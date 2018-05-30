@@ -19,5 +19,12 @@ main{
     margin-top: 60px;
 }
 .main_class{
-    margin-top: 50px;
+    margin-top: 60px;
+}
+#titleCategoryList{
+    color: white;
+    background-color: #00e06e;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "BlinkMacSystemFont,Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue, sans-serif";
 }
