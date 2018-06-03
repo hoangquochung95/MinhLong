@@ -66,14 +66,13 @@ footer{
 }
 .category-list-popular{
     position: relative;
-    overflow-x: auto;
-    overflow-y: hidden;
-    height: 220px;
-    width: 96%;
+    height: 250px;
+    width: 99%;
 
 }
 .popular-item{
-    position: absolute;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .popular-item ul{
      display: inline-flex;
@@ -81,14 +80,16 @@ footer{
     padding-left: 0px;
 }
 .prev,.next{
-    margin-top: 7%;
+    top:35%;
     position: absolute;
-    height: 40px;
-    width: 30px;
     text-align: center;
-    background: #585555bd;
+    background: #58555575;
     padding: 7px;
+    height: 47px;
+    width: 37px;
+    font-size: 22px;
     color: white!important;
+    transition: background-color 1s;
 }
 .prev{
     left: 0px;
@@ -98,33 +99,49 @@ footer{
     right: 0px;
     color: white;
 }
-.category-list-popular::-webkit-scrollbar {
+.prev:hover ,.next:hover{
+    background-color: #585555c7;
+    transition: background-color 1s;
+}
+
+.popular-item::-webkit-scrollbar {
 width: 6px;
 height: 6px;
 }
-.category-list-popular::-webkit-scrollbar-button:start:decrement,
-.category-list-popular::-webkit-scrollbar-button:end:increment {
+.popular-item::-webkit-scrollbar-button:start:decrement,
+.popular-item::-webkit-scrollbar-button:end:increment {
 display: block;
 height: 1000px;
 }
 
-.category-list-popular::-webkit-scrollbar-button:vertical:increment {
+.popular-item::-webkit-scrollbar-button:vertical:increment {
 background-color: #fff;
 }
 
-.category-list-popular::-webkit-scrollbar-track-piece {
+.popular-item::-webkit-scrollbar-track-piece {
 background-color: #eee;
 -webkit-border-radius: 3px;
 }
 
-.category-list-popular::-webkit-scrollbar-thumb:vertical {
+.popular-item::-webkit-scrollbar-thumb:vertical {
 height: 50px;
 background-color: #ccc;
 -webkit-border-radius: 3px;
 }
 
-.category-list-popular::-webkit-scrollbar-thumb:horizontal {
+.popular-item::-webkit-scrollbar-thumb:horizontal {
 width: 50px;
 background-color: #ccc;
 -webkit-border-radius: 3px;
+}
+.index-tab-1{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.index-link{
+    text-align: center;
+}
+.index-link a{
+    box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.42);
+    border: #6b6a6a75 solid 1px;
 }

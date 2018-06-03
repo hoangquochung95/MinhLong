@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('master_container')
-<div class="container-fluid" style="margin: 0 0 0 32px">
+<div class="container" >
     <div class="row">
         <div id="carousel-pr-index" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -24,7 +24,7 @@
             </a>
         </div>
     </div>
-    <div class="row">
+    <div class="row" style="max-width: 100%;">
        <div class="category-list-popular" >
            <div class="popular-item" >
                    <ul>
@@ -41,13 +41,40 @@
            </div>
            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-           {{--<div class="popular-item"><img src="{{ URL::asset('image/c.jpeg') }}" alt="Third slide" height="200" width="200"></div>--}}
-           {{--<div class="popular-item"><img  src="{{ URL::asset('image/c.jpeg') }}" alt="Third slide" height="200" width="200"></div>--}}
        </div>
 
     </div>
-</div>
-<div class="container" >
+    <div class="row index-link" style="max-width: 100%;">
+        <div  class="col-md-3">
+            <a class="nav-link active" href="#">Active</a>
+        </div>
+
+        <div class="col-md-3">
+            <a class="nav-link" href="#">Link</a>
+        </div>
+        <div class="col-md-3">
+            <a class="nav-link" href="#">Link</a>
+        </div>
+        <div class="col-md-3">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </div>
+    </div>
+    <div class="row">
+        <ul class="nav nav-tabs index-tab-1">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
     <div class="row">
         <div class="col-md-4">
             <div class="category-list">
