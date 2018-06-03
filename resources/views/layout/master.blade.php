@@ -12,7 +12,6 @@
 @include ('layout.footer')
 
 <script src="{{ URL::asset("/js/bootstrap.js")}}"></script>
-<script src="{{ URL::asset("/js/particles.js")}}"></script>
 <script src="{{ URL::asset("/js/main.js")}}"></script>
 @yield('sub_script')
 </body>
