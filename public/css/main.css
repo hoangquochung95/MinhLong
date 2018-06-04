@@ -23,7 +23,7 @@ footer{
     text-align: center;
 }
 .category-list .list-group span{
-    background-color: #4fc08d;
+    background-color: #e40046;
     color: white;
     font-weight: 600;
     letter-spacing: 1px;
@@ -62,12 +62,12 @@ footer{
 }
 #carousel-pr-index ,.carousel-item {
     height: 350px;
-    width: 98%;
+    width: 100%;
 }
 .category-list-popular{
     position: relative;
     height: 250px;
-    width: 99%;
+    width: 100%;
 
 }
 .popular-item{
@@ -140,8 +140,40 @@ background-color: #ccc;
 }
 .index-link{
     text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 .index-link a{
-    box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.42);
+    /*box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.42);*/
     border: #6b6a6a75 solid 1px;
+    padding: 16px 0;
+    font-family: Roboto-Medium;
+    font-size: 20px;
+    border-radius: 48px;
+    background-color: #e40046;
+    color: white;
+}
+.container{
+    max-width: 1250px;
+}
+.view-tab{
+    border-radius: 14px;
+    margin-bottom: 27px;
+    border: #dee2e6 solid 1px;
+    box-shadow: 0px 5px 1px 2px #dee2e6d9;
+    background-color: white;
+}
+.view-tab-title{
+    font-family: Roboto-Regular;
+    font-size: 22px;
+    color: #424242;
+    width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.view-tab-category{
+    padding: 20px;
+}
+body{
+    background-color: #ececeb;
 }

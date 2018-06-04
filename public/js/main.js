@@ -17,3 +17,14 @@ function plusSlides(n) {
         })
     }
 }
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var indexLinkTop =$('.index-link ')[0].offsetTop;
+    if (document.body.scrollTop > indexLinkTop|| document.documentElement.scrollTop > indexLinkTop) {
+        console.log('1');
+    } else {
+        console.log('0');
+    }
+}

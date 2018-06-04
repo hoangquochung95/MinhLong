@@ -24,7 +24,7 @@
             </a>
         </div>
     </div>
-    <div class="row" style="max-width: 100%;">
+    <div class="row" >
        <div class="category-list-popular" >
            <div class="popular-item" >
                    <ul>
@@ -44,7 +44,7 @@
        </div>
 
     </div>
-    <div class="row index-link" style="max-width: 100%;">
+    <div class="row index-link " >
         <div  class="col-md-3">
             <a class="nav-link active" href="#">Active</a>
         </div>
@@ -56,11 +56,13 @@
             <a class="nav-link" href="#">Link</a>
         </div>
         <div class="col-md-3">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#">Disabled</a>
         </div>
     </div>
-    <div class="row">
-        <ul class="nav nav-tabs index-tab-1">
+    <p class="view-tab-title"> abc</p>
+    <div class="row view-tab view-tab-category">
+
+        <ul class="nav nav-tabs index-tab-1 ">
             <li class="nav-item">
                 <a class="nav-link active" href="#">Active</a>
             </li>
@@ -74,8 +76,6 @@
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
         </ul>
-    </div>
-    <div class="row">
         <div class="col-md-4">
             <div class="category-list">
                 <div class="list-group">
