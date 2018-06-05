@@ -110,8 +110,180 @@
             </div>
         </div>
         <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <div class ="title-item-shop">
+                                    <b>Bồn cầu cao cấp</b>
+                                </div>
+                                <div class ="price-item-shop">
+                                    <p>Price: $10</p>
+                                </div>
+                                <div class ="rating-item-shop">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <div class ="title-item-shop">
+                                    <b>Bồn cầu cao cấp</b>
+                                </div>
+                                <div class ="price-item-shop">
+                                    <p>Price: $10</p>
+                                </div>
+                                <div class ="rating-item-shop">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="col-md-3">
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <div class ="title-item-shop">
+                                    <b>Bồn cầu cao cấp</b>
+                                </div>
+                                <div class ="price-item-shop">
+                                    <p>Price: $10</p>
+                                </div>
+                                <div class ="rating-item-shop">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <div class ="title-item-shop">
+                                    <b>Bồn cầu cao cấp</b>
+                                </div>
+                                <div class ="price-item-shop">
+                                    <p>Price: $10</p>
+                                </div>
+                                <div class ="rating-item-shop">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                    <img src="{{ URL::asset('image/star.png') }}" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <div class ="title-item-shop">
+                                <b>Bồn cầu cao cấp</b>
+                            </div>
+                            <div class ="price-item-shop">
+                                <p>Price: $10</p>
+                            </div>
+                            <div class ="rating-item-shop">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <div class ="title-item-shop">
+                                <b>Bồn cầu cao cấp</b>
+                            </div>
+                            <div class ="price-item-shop">
+                                <p>Price: $10</p>
+                            </div>
+                            <div class ="rating-item-shop">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="col-md-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <div class ="title-item-shop">
+                                <b>Bồn cầu cao cấp</b>
+                            </div>
+                            <div class ="price-item-shop">
+                                <p>Price: $10</p>
+                            </div>
+                            <div class ="rating-item-shop">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+                        <div class="card-body">
+                            <div class ="title-item-shop">
+                                <b>Bồn cầu cao cấp</b>
+                            </div>
+                            <div class ="price-item-shop">
+                                <p>Price: $10</p>
+                            </div>
+                            <div class ="rating-item-shop">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+                                <img src="{{ URL::asset('image/star.png') }}" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
+    </div>
+    <p class="view-tab-title"> abc</p>
+    <div class="row view-tab highlights-item-shop">
+        <div class="col-md-3">
+            <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+        </div>
+        <div class="col-md-3">
+            <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+        </div>
+        <div class="col-md-3">
+            <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+        </div>
+        <div class="col-md-3">
+            <img class="card-img-top" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+        </div>
+
     </div>
 </div>
 
