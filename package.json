@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "angular": "^1.6.10",
+        "animate.css": "^3.6.1",
         "boostrap": "^2.0.0"
     }
 }

@@ -59,7 +59,7 @@
             <a class="nav-link" href="#">Disabled</a>
         </div>
     </div>
-    <p class="view-tab-title"> abc</p>
+    <p class="view-tab-title"> Danh mục sản phẩm</p>
     <div class="row view-tab view-tab-category">
 
         <ul class="nav nav-tabs index-tab-1 ">
@@ -269,7 +269,7 @@
             </div>
         </div>
     </div>
-    <p class="view-tab-title"> abc</p>
+    <p class="view-tab-title"> Sản phẩm ưa chuộng</p>
     <div class="row view-tab highlights-item-shop">
         <div class="col-md-3">
             <img class="card-img-top large-item-shop" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
@@ -289,9 +289,10 @@
         </div>
 
     </div>
+    <p class="view-tab-title"> Sản phẩm cao cấp</p>
     <div class="row view-tab">
         <div class="col-md-3">
-            <img class="card-img-top large-item-shop" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
+            <img class="card-img-top large-item-shop jackInTheBox" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
             <img class="card-img-top small-item-shop" src="{{ URL::asset('image/b.jpeg') }}" alt="Card image cap">
         </div>
         <div class="col-md-3">
