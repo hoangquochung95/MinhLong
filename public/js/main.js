@@ -25,6 +25,10 @@ $(document).ready(function(){
             return this;
         },
     });
+    $('.luxury-item-icons').on('mouseenter',function(){
+
+    });
+
 });
 
 function plusSlides(n) {
@@ -46,23 +50,17 @@ function plusSlides(n) {
     }
 }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+    scrollEvent();
+};
 
-function scrollFunction() {
+function scrollEvent() {
     var indexLinkTop =$('.index-link ')[0].offsetTop;
-    var count=0;
-
-
-}
-function a(type,location,callback){
     if (document.body.scrollTop > indexLinkTop|| document.documentElement.scrollTop > indexLinkTop) {
-        console.log('1');
-    } else {
+
+
+    } else if (document.body.scrollTop > indexLinkTop|| document.documentElement.scrollTop > indexLinkTop){
         console.log('0');
     }
-    if(typeScroll = 0){
 
-    }else{
-
-    }
 }

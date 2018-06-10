@@ -215,4 +215,32 @@ body{
         flex: 100%;
         max-width: 100%;
     }
+    .luxury-item-icons{
+        height: 50px;
+        width: 50px;
+        margin-left: 45%;
+    }
+}
+.luxury-item-shop{
+    padding: 30px;
+}
+.luxury-item-icons{
+    height: 50px;
+    width: 50px;
+    /*margin-left: 39%;*/
+    transition: margin-left 1s;
+}
+/*.luxury-item-icons:hover{*/
+    /*margin-left: 0%;*/
+    /*transition: margin-left 1s;*/
+/*}*/
+.luxury-item-body p{
+    text-align: center;
+    margin: 10px auto;
+    color: #5eb195;
+    font-size: 23px;
+}
+.luxury-item-body{
+    display: inline-flex;
+    width: 100%;
 }
