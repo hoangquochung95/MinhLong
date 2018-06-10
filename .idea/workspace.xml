@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f3ad66b-a5f4-450d-bde4-b5b4d5b89655" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -481,7 +478,7 @@
       <workItem from="1528204965755" duration="4133000" />
       <workItem from="1528297266773" duration="2412000" />
       <workItem from="1528536446467" duration="6181000" />
-      <workItem from="1528632220769" duration="6600000" />
+      <workItem from="1528632220769" duration="6631000" />
     </task>
     <task id="LOCAL-00001" summary="edit angular 1">
       <created>1526223168653</created>
@@ -574,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528560100297</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Create index website">
+      <created>1528642754112</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1528642754112</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81024000" />
+    <option name="totallyTimeSpent" value="81055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
