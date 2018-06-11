@@ -157,7 +157,6 @@ background-color: #ccc;
     max-width: 1250px;
 }
 .view-tab{
-    border-radius: 14px;
     margin-bottom: 27px;
     border: #dee2e6 solid 1px;
     box-shadow: 0px 5px 1px 2px #dee2e6d9;
@@ -227,18 +226,17 @@ body{
 .luxury-item-icons{
     height: 50px;
     width: 50px;
-    /*margin-left: 39%;*/
+    margin-left: 39%;
     transition: margin-left 1s;
 }
-/*.luxury-item-icons:hover{*/
-    /*margin-left: 0%;*/
-    /*transition: margin-left 1s;*/
-/*}*/
+
 .luxury-item-body p{
     text-align: center;
     margin: 10px auto;
     color: #5eb195;
-    font-size: 23px;
+    font-size: 10px;
+    visibility: hidden;
+    opacity: 0;
 }
 .luxury-item-body{
     display: inline-flex;

@@ -25,8 +25,15 @@ $(document).ready(function(){
             return this;
         },
     });
-    $('.luxury-item-icons').on('mouseenter',function(){
-
+    $('.luxury-item-body').on('mouseenter',function(){
+        var element=this;
+        $(element).find('img').css({'margin-left':'0%','transition':'margin-left 1s'});
+        setTimeout(function(){ $(element).find('p').css({'visibility':'visible','opacity':'1','transition':'opacity .6s ease-in-out','font-size':'23px'}); }, 400);
+    });
+    $('.luxury-item-body').on('mouseleave',function(){
+        var element=this;
+        $(element).find('img').css({'margin-left':'39%','transition':'margin-left 1s'});
+        $(element).find('p').css({'visibility':'hidden','opacity':'0','transition':'opacity 1s ease-in-out','font-size':'10px'});
     });
 
 });
