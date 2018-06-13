@@ -237,6 +237,18 @@ body{
     font-size: 10px;
     visibility: hidden;
     opacity: 0;
+    max-height: 50px!important;
+    height: 50px;
+}
+.luxury-item-body-active img{
+    margin-left:0%;
+    transition:margin-left 1s ;
+}
+.luxury-item-body-active p{
+    visibility:visible;
+    opacity:1;
+    transition:opacity .6s ease-in-out;
+    font-size:23px;
 }
 .luxury-item-body{
     display: inline-flex;
