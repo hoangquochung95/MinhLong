@@ -238,7 +238,6 @@ body{
     visibility: hidden;
     opacity: 0;
     max-height: 50px!important;
-    height: 50px;
 }
 .luxury-item-body-active img{
     margin-left:0%;
@@ -253,4 +252,46 @@ body{
 .luxury-item-body{
     display: inline-flex;
     width: 100%;
+}
+.contact-index{
+    padding: 30px;
+}
+
+.contact-index .avatar-index {
+    position: relative;
+    width: 50%;
+}
+
+.contact-index .avatar-index img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.avatar-index-body {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.contact-index .avatar-index:hover .avatar-index-body {
+    width: 100%;
+    left: 0;
+}
+
+.avatar-index-body .avatar-index-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
