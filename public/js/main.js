@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $.fn.extend({
         animateCss: function(animationName, callback) {
             var animationEnd = (function(el) {
@@ -25,9 +26,12 @@ $(document).ready(function(){
             return this;
         },
     });
-
+    require.config({
+        baseUrl: "../public/js",
+    });
 
 });
+
 $('.luxury-item-body').on('mouseenter',function(){
     $(this).addClass('luxury-item-body-active');
 });
