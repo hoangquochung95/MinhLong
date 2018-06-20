@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="{{URL::asset('css/main.css')}}">
 <link rel="stylesheet" href="{{URL::asset('css/animate.min.css')}}">
 <script src="{{ URL::asset("/js/jquery.js")}}"></script>
+<script src="{{ URL::asset("/js/vue.js")}}"></script>
+<script src="{{ URL::asset("/js/vue-config.js")}}"></script>
 <body>
 @include ('layout.header')
 @yield('master_container')

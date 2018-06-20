@@ -26,9 +26,7 @@ $(document).ready(function(){
             return this;
         },
     });
-    require.config({
-        baseUrl: "../public/js",
-    });
+
 
 });
 

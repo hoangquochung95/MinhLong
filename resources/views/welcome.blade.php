@@ -73,12 +73,12 @@
 @endsection
 @section('sub_script')
     @include('component.shop.view-tab-category')
-    <script type="module">
-        require(['Vue'],function (Vue) {
+    <script >
+        require(['vue'],function (Vue) {
             new Vue({
                 el:'#app',
-
             });
-        });
+        })
+
     </script>
 @endsection

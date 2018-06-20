@@ -19,31 +19,8 @@
             <div class="category-list">
                 <div class="list-group">
                     <span class="list-group-item"> Danh sách </span>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="list-group-left">Thể Loại n</div>
-                        <div class="list-group-right"><img src="image/add.png" alt="" height="10" ></div>
-                    </a>
-                    <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#sub-list-item" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="list-group-left">Thể Loại 1</div>
-                        <div class="list-group-right"><img src="image/add.png" alt="" height="10" ></div>
-                    </a>
-                    <div class="collapse" id="sub-list-item">
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="list-group-left">Thể Loại 2</div>
-                            <div class="list-group-right"><img src="image/add.png" alt="" height="10" ></div>
-                        </a>
-                    </div>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="list-group-left">Thể Loại 3</div>
-                        <div class="list-group-right"><img src="image/add.png" alt="" height="10" ></div>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="list-group-left">Thể Loại 4</div>
-                        <div class="list-group-right"><img src="image/add.png" alt="" height="10" ></div>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="list-group-left">Thể Loại 5</div>
-                        <div class="list-group-right"><img src="image/add.png" alt="" height="10" ></div>
+                    <a :href="'#'+item.id" class="list-group-item list-group-item-action" v-for="item in distinctCategory" @click="changeCate(item.id)">
+                        <div class="list-group-left">@{{  item.value }}</div>
                     </a>
                 </div>
             </div>
@@ -74,30 +51,121 @@
     </div>
 </div>
 </template>
-<script type="module">
-    require(['Vue'],function (Vue) {
-        var component =Vue.component('view-tab-category',{
-            data:function (){
+<script>
+
+ require(['vue'],function (Vue) {
+    Vue.component( {
+            data: function () {
                 return {
-                    img:[
-                        {url:'image/a.jpeg',name:"Bon cau cao cap",price:"123"},
-                        {url:'image/b.jpeg',name:"Bon cau trung cap",price:"12"},
-                        {url:'image/c.jpeg',name:"Bon cau ha cap",price:"1"},
+                    img: [
+                        {
+                            url: 'image/a.jpeg',
+                            name: "Bon cau cao cap",
+                            price: "123",
+                            categoryName: "Thể Loại 1",
+                            categoryId: "1"
+                        },
+                        {
+                            url: 'image/a.jpeg',
+                            name: "Bon cau cao cap",
+                            price: "123",
+                            categoryName: "Thể Loại 1",
+                            categoryId: "1"
+                        },
+                        {
+                            url: 'image/a.jpeg',
+                            name: "Bon cau cao cap",
+                            price: "123",
+                            categoryName: "Thể Loại 1",
+                            categoryId: "1"
+                        },
+                        {
+                            url: 'image/a.jpeg',
+                            name: "Bon cau cao cap",
+                            price: "123",
+                            categoryName: "Thể Loại 1",
+                            categoryId: "1"
+                        },
+                        {
+                            url: 'image/b.jpeg',
+                            name: "Bon cau trung cap",
+                            price: "12",
+                            categoryName: "Thể Loại 2",
+                            categoryId: "2"
+                        },
+                        {
+                            url: 'image/b.jpeg',
+                            name: "Bon cau trung cap",
+                            price: "12",
+                            categoryName: "Thể Loại 2",
+                            categoryId: "2"
+                        },
+                        {
+                            url: 'image/b.jpeg',
+                            name: "Bon cau trung cap",
+                            price: "12",
+                            categoryName: "Thể Loại 2",
+                            categoryId: "2"
+                        },
+                        {
+                            url: 'image/c.jpeg',
+                            name: "Bon cau ha cap",
+                            price: "1",
+                            categoryName: "Thể Loại 3",
+                            categoryId: "3"
+                        },
+                        {
+                            url: 'image/c.jpeg',
+                            name: "Bon cau ha cap",
+                            price: "1",
+                            categoryName: "Thể Loại 3",
+                            categoryId: "3"
+                        },
+                        {
+                            url: 'image/c.jpeg',
+                            name: "Bon cau ha cap",
+                            price: "1",
+                            categoryName: "Thể Loại 3",
+                            categoryId: "3"
+                        },
                     ],
-                    displayImg:''
+                    displayImg: '',
+                    currentCategory: 1
                 }
             },
-            template:"#view-tab-category",
-            computed:{
-                listImg:function () {
-                    var that= this;
+            template: "#view-tab-category",
+            methods: {
+                changeCate: function (categoryId) {
+                    this.currentCategory = categoryId;
+                    console.log(this.currentCategory);
+                }
+            },
+            computed: {
+                listImg: function () {
+                    var that = this;
                     return this.img.map(function (img) {
-                        that.url= window.location.origin+'/'+baseUrl+'/'+that.img;
+                        that.url = window.location.origin + '/' + baseUrl + '/' + that.img;
                         return img;
                     })
+                },
+                distinctCategory: function () {
+                    var listCateId = [];
+                    for (var index in this.img) {
+                        var cateName = this.img[index].categoryName;
+                        var cateId = this.img[index].categoryId;
+                        if (listCateId.length === 0) {
+                            listCateId.push({value: cateName, id: cateId});
+                        } else {
+                            var checkExistCate = listCateId.find(function (element) {
+                                return element.id === cateId;
+                            });
+                            if (typeof checkExistCate === "undefined")
+                                listCateId.push({value: cateName, id: cateId});
+                        }
+                    }
+                    return listCateId;
                 }
-            }
-        });
-
-    })
+            },
+    });
+});
 </script>
