@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <title>Minh Long</title>
 <link rel="stylesheet" href="{{URL::asset('css/bootstrap.css')}}">
 <link rel="stylesheet" href="{{URL::asset('css/main.css')}}">

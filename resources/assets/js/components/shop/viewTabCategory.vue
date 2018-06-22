@@ -49,12 +49,9 @@
             </div>
         </div>
     </div>
-</div>
 </template>
 <script>
-
- require(['vue'],function (Vue) {
-    Vue.component( {
+        export default {
             data: function () {
                 return {
                     img: [
@@ -166,6 +163,5 @@
                     return listCateId;
                 }
             },
-    });
-});
+    }
 </script>

@@ -61,24 +61,16 @@
                 </div>
             </div>
             <p class="view-tab-title"> Danh mục sản phẩm</p>
-            <view-tab-category></view-tab-category>
+            <example-component></example-component>
             <p class="view-tab-title"> Sản phẩm ưa chuộng</p>
-            @include('component.shop.highlights-item-shop')
+            <view-tab-category></view-tab-category>
             <p class="view-tab-title"> Sản phẩm cao cấp</p>
-            @include('component.shop.luxury-item-shop')
+
             <p class="view-tab-title">Liên Hệ</p>
-            @include('component.contact.supportEmail')
+
         </div>
     </div>
 @endsection
 @section('sub_script')
-    @include('component.shop.view-tab-category')
-    <script >
-        require(['vue'],function (Vue) {
-            new Vue({
-                el:'#app',
-            });
-        })
-
-    </script>
+    <script src="{{ URL::asset('js/app.js') }}"></script>
 @endsection
