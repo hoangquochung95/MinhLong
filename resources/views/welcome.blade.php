@@ -61,9 +61,9 @@
                 </div>
             </div>
             <p class="view-tab-title"> Danh mục sản phẩm</p>
-            <example-component></example-component>
-            <p class="view-tab-title"> Sản phẩm ưa chuộng</p>
             <view-tab-category></view-tab-category>
+            <p class="view-tab-title"> Sản phẩm ưa chuộng</p>
+
             <p class="view-tab-title"> Sản phẩm cao cấp</p>
 
             <p class="view-tab-title">Liên Hệ</p>
