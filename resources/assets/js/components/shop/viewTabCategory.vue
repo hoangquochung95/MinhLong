@@ -138,9 +138,8 @@
             },
             computed: {
                 listImg: function () {
-                    var that = this;
                     return this.img.map(function (img) {
-                        that.url = window.location.origin + '/' + baseUrl + '/' + that.img;
+                        img.url = window.location.origin + '/' + baseUrl + '/' +img.url;
                         return img;
                     })
                 },

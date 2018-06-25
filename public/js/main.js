@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $.fn.extend({
         animateCss: function(animationName, callback) {
             var animationEnd = (function(el) {
@@ -26,25 +25,29 @@ $(document).ready(function(){
             return this;
         },
     });
+    $('.luxury-item-body').on('mouseenter',function(){
+        $(this).addClass('luxury-item-body-active');
+    });
+    $('.luxury-item-body').on('mouseleave',function(){
+        $(this).removeClass('luxury-item-body-active');
+    });
+    $('.on-top').on('click',function(){
+        document.body.scrollTop =0;
+        document.documentElement.scrollTop=0;
+        // console.log("asdasds");
+        // $(document.body).scrollTo({
+        //     top: 0,
+        //     behavior: 'smooth'
+        // })
+    });
 
-
+    window.onscroll = function() {
+        scrollEvent();
+    };
 });
 
-$('.luxury-item-body').on('mouseenter',function(){
-    $(this).addClass('luxury-item-body-active');
-});
-$('.luxury-item-body').on('mouseleave',function(){
-    $(this).removeClass('luxury-item-body-active');
-})
-$('.on-top').on('click',function(){
-    document.body.scrollTop =0;
-    document.documentElement.scrollTop=0;
-    // console.log("asdasds");
-    // $(document.body).scrollTo({
-    //     top: 0,
-    //     behavior: 'smooth'
-    // })
-});
+
+
 function plusSlides(n) {
     var scrollValue =$('.popular-item')[0].scrollLeft;
     if(n>0){
@@ -58,15 +61,12 @@ function plusSlides(n) {
     if(n<0){
         $('.popular-item')[0].scrollTo({
             top: 0,
-            left: (scrollValue -500)?scrollValue -500:00,
+            left: (scrollValue -500)?scrollValue -500:0,
             behavior: 'smooth'
         })
     }
 }
 
-window.onscroll = function() {
-    scrollEvent();
-};
 
 function scrollEvent() {
     var indexLinkTop =$('.index-link ')[0].offsetTop;

@@ -63,9 +63,9 @@
             <p class="view-tab-title"> Danh mục sản phẩm</p>
             <view-tab-category></view-tab-category>
             <p class="view-tab-title"> Sản phẩm ưa chuộng</p>
-
+            <highlights-item-shop></highlights-item-shop>
             <p class="view-tab-title"> Sản phẩm cao cấp</p>
-
+            <luxury-item-shop></luxury-item-shop>
             <p class="view-tab-title">Liên Hệ</p>
 
         </div>

@@ -319,13 +319,18 @@ body{
     height: 50px;
     width: 50px;
 }
-.card-img-top{
+.view-tab-category .card-img-top{
     height: 165px;
 }
 .card-body{
     padding-bottom: 36px;
 }
 .title-item-shop,.title-item-shop p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.luxury-item-shop .luxury-item-body p{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
