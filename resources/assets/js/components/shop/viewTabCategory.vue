@@ -1,4 +1,4 @@
-<template id="view-tab-category">
+<template>
     <div class="row view-tab view-tab-category">
 
         <ul class="nav nav-tabs index-tab-1 ">
@@ -20,7 +20,7 @@
                 <div class="list-group">
                     <span class="list-group-item"> Danh sách </span>
                     <a :href="'#'+item.id" class="list-group-item list-group-item-action" v-for="item in distinctCategory" @click="changeCate(item.id)">
-                        <div class="list-group-left">@{{  item.value }}</div>
+                        <div class="list-group-left">{{ item.value }}</div>
                     </a>
                 </div>
             </div>
@@ -32,15 +32,15 @@
                         <img class="card-img-top" :src="item.url" alt="Card image cap">
                         <div class="card-body">
                             <div class ="title-item-shop">
-                                <b>@{{ item.name }}</b>
+                                <p><b>{{ item.name }}</b></p>
                             </div>
                             <div class ="price-item-shop">
-                                <p>@{{ item.price }}</p>
+                                <p>{{ item.price }}</p>
                             </div>
                             <div class ="rating-item-shop">
-                                <img src="{{ URL::asset('image/star.png') }}" alt="" height="30" width="30">
-                                <img src="{{ URL::asset('image/star.png') }}" alt="" height="30" width="30">
-                                <img src="{{ URL::asset('image/star.png') }}" alt="" height="30" width="30">
+                                <img src="image/star.png" alt="" height="30" width="30">
+                                <img src="image/star.png" alt="" height="30" width="30">
+                                <img src="image/star.png" alt="" height="30" width="30">
 
                             </div>
                         </div>
@@ -130,7 +130,6 @@
                     currentCategory: 1
                 }
             },
-            template: "#view-tab-category",
             methods: {
                 changeCate: function (categoryId) {
                     this.currentCategory = categoryId;
