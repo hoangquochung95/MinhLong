@@ -1,7 +1,7 @@
 <template>
     <div class="row view-tab view-tab-category">
 
-        <ul class="nav nav-tabs index-tab-1 ">
+        <ul class="nav nav-tabs index-tab-1">
             <li class="nav-item">
                 <a class="nav-link active" href="#">Active</a>
             </li>
@@ -103,20 +103,6 @@
                             price: "12",
                             categoryName: "Thể Loại 2",
                             categoryId: "2"
-                        },
-                        {
-                            url: 'image/c.jpeg',
-                            name: "Bon cau ha cap",
-                            price: "1",
-                            categoryName: "Thể Loại 3",
-                            categoryId: "3"
-                        },
-                        {
-                            url: 'image/c.jpeg',
-                            name: "Bon cau ha cap",
-                            price: "1",
-                            categoryName: "Thể Loại 3",
-                            categoryId: "3"
                         },
                         {
                             url: 'image/c.jpeg',

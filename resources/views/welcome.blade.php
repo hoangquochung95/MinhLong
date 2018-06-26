@@ -47,30 +47,48 @@
             </div>
             <div class="row index-link " >
                 <div  class="col-md-3">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link active" href="#view-tab-category">Sản phẩm</a>
                 </div>
 
                 <div class="col-md-3">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#highlights-item-shop">Ưa chuộng</a>
                 </div>
                 <div class="col-md-3">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#luxury-item-shop">Cao cấp</a>
                 </div>
                 <div class="col-md-3">
-                    <a class="nav-link" href="#">Disabled</a>
+                    <a class="nav-link" href="#support-email">Liên Hệ</a>
                 </div>
             </div>
-            <p class="view-tab-title"> Danh mục sản phẩm</p>
+            <p class="view-tab-title" id="view-tab-category"> Danh mục sản phẩm</p>
             <view-tab-category></view-tab-category>
-            <p class="view-tab-title"> Sản phẩm ưa chuộng</p>
+            <p class="view-tab-title" id="highlights-item-shop"> Sản phẩm ưa chuộng</p>
             <highlights-item-shop></highlights-item-shop>
-            <p class="view-tab-title"> Sản phẩm cao cấp</p>
+            <p class="view-tab-title" id="luxury-item-shop"> Sản phẩm cao cấp</p>
             <luxury-item-shop></luxury-item-shop>
-            <p class="view-tab-title">Liên Hệ</p>
-
+            <p class="view-tab-title" id="support-email">Liên Hệ</p>
+            <support-email></support-email>
         </div>
     </div>
 @endsection
 @section('sub_script')
     <script src="{{ URL::asset('js/app.js') }}"></script>
+    <script>
+
+    window.onscroll = function() {
+        scrollEvent();
+    };
+
+
+    function scrollEvent() {
+        var indexLinkTop =$('.index-link ')[0].offsetTop;
+        if (document.body.scrollTop > indexLinkTop|| document.documentElement.scrollTop > indexLinkTop) {
+            $('#subMenu').css('visibility','visible');
+
+        } else if (document.body.scrollTop < indexLinkTop|| document.documentElement.scrollTop < indexLinkTop){
+            $('#subMenu').css('visibility','hidden');
+        }
+
+    }
+    </script>
 @endsection

@@ -1,9 +1,15 @@
 <template>
     <div class="row view-tab highlights-item-shop">
-        <div class="col-md-3" v-for="displayItems in listImg">
-            <template v-for="item in displayItems">
-                <img :class="{'card-img-top':true,'large-item-shop' : chooseSize(isActive),'small-item-shop':chooseSize(!isActive)}" :src="item.url" :alt="item.name">
+        <div class="col-md-3" v-for="(displayItems,key) in listImg">
+            <template v-if="key%2 === 0" v-for="(item,index) in displayItems" >
+                <img v-if="index === 0" class="card-img-top small-item-shop"  :src="item.url" :alt="item.name">
+                <img v-if="index === 1" class="card-img-top large-item-shop"  :src="item.url" :alt="item.name">
             </template>
+            <template v-if="key%2 !== 0" v-for="(item,index) in displayItems"  >
+                <img v-if="index === 0" class="card-img-top large-item-shop" :src="item.url" :alt="item.name">
+                <img v-if="index === 1" class="card-img-top small-item-shop" :src="item.url" :alt="item.name">
+            </template>
+
         </div>
     </div>
 </template>
@@ -72,7 +78,6 @@
                 ],
                 displayImg: '',
                 currentCategory: 1,
-                isActive:false,
             }
         },
         mounted:function(){
@@ -94,10 +99,12 @@
                 return result;
             },
         },
+        watch:{
+            isActive:function(val){
+                this.notActive=!val;
+            }
+        },
         methods:{
-            chooseSize :function(isActive){
-                return isActive;
-            },
             changeActive:function (isActive) {
                 this.isActive=!isActive;
                 return this.isActive;

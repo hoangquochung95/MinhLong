@@ -13,7 +13,6 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -45,3 +44,18 @@
         </form>
     </div>
 </nav>
+
+<ul class="nav justify-content-center fixed-top" id="subMenu">
+    <li class="nav-item">
+        <a class="nav-link active" href="#view-tab-category"><img src="{{ URL::asset('image/icon-tab-category.png') }}" height="20" width="20">  Sản phẩm</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#highlights-item-shop"><img src="{{ URL::asset('image/icon-highlight.png') }}" height="20" width="20">  Ưa chuộng</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#luxury-item-shop"><img src="{{ URL::asset('image/icon-highlight.png') }}" height="20" width="20">  Cao cấp</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#support-email"> <img src="{{ URL::asset('image/icon-highlight.png') }}" height="20" width="20">  Liên Hệ</a>
+    </li>
+</ul>

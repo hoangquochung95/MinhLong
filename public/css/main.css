@@ -335,3 +335,19 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.vee-error-msg{
+    color:red;
+}
+#subMenu{
+    top: 48px;
+    visibility:hidden;
+    background-color: #35495e;
+    transition: visibility .4s;
+}
+#subMenu a{
+    color: white;
+}
+#subMenu li{
+    width: 235px;
+    text-align: center;
+}

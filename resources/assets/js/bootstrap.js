@@ -10,7 +10,6 @@ window.Popper = require('popper.js').default;
 
 try {
     window.$ = window.jQuery = require('../../../public/js/jquery');
-
     require('bootstrap');
 } catch (e) {}
 
@@ -54,3 +53,4 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+window.VeeValidate= require('vee-validate');

@@ -41,9 +41,7 @@ $(document).ready(function(){
         // })
     });
 
-    window.onscroll = function() {
-        scrollEvent();
-    };
+
 });
 
 
@@ -68,13 +66,3 @@ function plusSlides(n) {
 }
 
 
-function scrollEvent() {
-    var indexLinkTop =$('.index-link ')[0].offsetTop;
-    if (document.body.scrollTop > indexLinkTop|| document.documentElement.scrollTop > indexLinkTop) {
-
-
-    } else if (document.body.scrollTop > indexLinkTop|| document.documentElement.scrollTop > indexLinkTop){
-        console.log('0');
-    }
-
-}
