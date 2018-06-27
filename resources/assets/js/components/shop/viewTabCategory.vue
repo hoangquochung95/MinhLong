@@ -1,31 +1,32 @@
 <template>
-    <div class="row view-tab view-tab-category">
+    <div class="row view-tab-category">
 
-        <ul class="nav nav-tabs index-tab-1">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <div class="col-md-4">
-            <div class="category-list">
-                <div class="list-group">
-                    <span class="list-group-item"> Danh sách </span>
-                    <a :href="'#'+item.id" class="list-group-item list-group-item-action" v-for="item in distinctCategory" @click="changeCate(item.id)">
-                        <div class="list-group-left">{{ item.value }}</div>
-                    </a>
-                </div>
-            </div>
+        <!--<ul class="nav nav-tabs index-tab-1" v-show="styleCss.displayTabbar">-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link active" href="#">Active</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Link</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Link</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <div class="col-md-3" v-show="styleCss.displayCategory">
+            <div class="row"></div>
+            <!--<div class="category-list">-->
+                <!--<div class="list-group">-->
+                    <!--<span class="list-group-item"> Danh sách </span>-->
+                    <!--<a :href="'#'+item.id" class="list-group-item list-group-item-action" v-for="item in distinctCategory" @click="changeCate(item.id)">-->
+                        <!--<div class="list-group-left">{{ item.value }}</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <div class="row">
                 <div class="col-md-3" v-for="item in listImg">
                     <div class="card" style="width: 100%;">
@@ -52,6 +53,9 @@
 </template>
 <script>
         export default {
+            props:{
+                typeContext: String
+            },
             data: function () {
                 return {
                     img: [
@@ -112,9 +116,18 @@
                             categoryId: "3"
                         },
                     ],
+                    context:'',
+                    styleCss:{
+                        displayTabbar:false,
+                        displayCategory:false,
+                    },
                     displayImg: '',
-                    currentCategory: 1
+                    currentCategory: 1,
+
                 }
+            },
+            mounted:function () {
+              this.context =this.typeContext;
             },
             methods: {
                 changeCate: function (categoryId) {
@@ -145,6 +158,17 @@
                         }
                     }
                     return listCateId;
+                }
+            },
+            watch: {
+                context: function (newQuestion, oldQuestion) {
+                    switch (newQuestion){
+                        case 'welcome':
+                            console.log("sdasdasdsa");
+                            this.styleCss.displayTabbar=true;
+                            this.styleCss.displayCategory=true;
+                            break;
+                    }
                 }
             },
     }

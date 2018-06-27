@@ -1,5 +1,6 @@
 @extends('layout.master')
 @section('master_container')
+<div style="    background-color: whitesmoke;">
     <div id="app">
         <div class="container" >
             <div class="row">
@@ -61,15 +62,22 @@
                 </div>
             </div>
             <p class="view-tab-title" id="view-tab-category"> Danh mục sản phẩm</p>
-            <view-tab-category></view-tab-category>
+                <view-tab-category type-context="welcome"></view-tab-category>
             <p class="view-tab-title" id="highlights-item-shop"> Sản phẩm ưa chuộng</p>
-            <highlights-item-shop></highlights-item-shop>
+            <div class="view-tab">
+                <highlights-item-shop></highlights-item-shop>
+            </div>
             <p class="view-tab-title" id="luxury-item-shop"> Sản phẩm cao cấp</p>
-            <luxury-item-shop></luxury-item-shop>
+            <div class="view-tab">
+                <luxury-item-shop></luxury-item-shop>
+            </div>
             <p class="view-tab-title" id="support-email">Liên Hệ</p>
-            <support-email></support-email>
+            <div class="view-tab">
+                <support-email></support-email>
+            </div>
         </div>
     </div>
+</div>
 @endsection
 @section('sub_script')
     <script src="{{ URL::asset('js/app.js') }}"></script>

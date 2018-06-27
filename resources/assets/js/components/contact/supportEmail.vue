@@ -1,5 +1,5 @@
 <template>
-    <div class="row view-tab contact-index">
+    <div class="row contact-index">
         <div class="col-md-6 avatar-index" style="width: 50%">
             <img src="image/b.jpeg" alt="Avatar" class="image">
             <div class="avatar-index-body">

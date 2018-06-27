@@ -48,9 +48,7 @@ footer{
     font-weight: 400;
     padding-left: 36px;
 }
-.category-list .list-group{
-    box-shadow: 0 0px 5px 0 rgba(53, 73, 94, 0.2);
-}
+
 .category-list .list-group .active{
     color: #212529;
     background-color: #e8eaec;
@@ -178,9 +176,7 @@ background-color: #ccc;
 .view-tab-category{
     padding: 20px;
 }
-body{
-    background-color: #ececeb;
-}
+
 .view-tab-category .col-md-8 .col-md-3{
     margin-bottom: 10px;
 }
@@ -350,4 +346,10 @@ body{
 #subMenu li{
     width: 235px;
     text-align: center;
+}
+.view-tab-category>.col-md-3 ,.view-tab-category>.col-md-9{
+    padding: 15px;
+    overflow: hidden;
+    border: whitesmoke solid 1px;
+    background-color: white;
 }

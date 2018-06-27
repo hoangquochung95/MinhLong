@@ -1,5 +1,5 @@
 <template>
-    <div class="row view-tab highlights-item-shop">
+    <div class="row highlights-item-shop">
         <div class="col-md-3" v-for="(displayItems,key) in listImg">
             <template v-if="key%2 === 0" v-for="(item,index) in displayItems" >
                 <img v-if="index === 0" class="card-img-top small-item-shop"  :src="item.url" :alt="item.name">
