@@ -1,6 +1,6 @@
 <template>
     <div class="row luxury-item-shop">
-        <div class="col-md-2" v-for="item in listImg">
+        <div class="col-md-3" v-for="item in listImg">
             <img class="card-img-top " :src="item.url" alt="Card image cap">
             <hr>
             <div class="luxury-item-body"><img class="card-img-top luxury-item-icons" src="image/diamond.png" alt="Card image cap">

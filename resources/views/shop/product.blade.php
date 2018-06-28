@@ -1,11 +1,9 @@
 @extends('layout.master')
 @section('master_container')
-<div class="container">
+<div class="container" style="background-color: white">
     <div id="app">
-        <div class="container" >
             <p class="view-tab-title" id="view-tab-category"> Danh mục sản phẩm</p>
             <view-tab-category></view-tab-category>
-        </div>
     </div>
 </div>
 @endsection

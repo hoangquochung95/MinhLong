@@ -1,30 +1,13 @@
 <template>
     <div class="row view-tab-category">
-
-        <!--<ul class="nav nav-tabs index-tab-1" v-show="styleCss.displayTabbar">-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link active" href="#">Active</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link" href="#">Link</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link" href="#">Link</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link disabled" href="#">Disabled</a>-->
-            <!--</li>-->
-        <!--</ul>-->
-        <div class="col-md-3" v-show="styleCss.displayCategory">
-            <div class="row"></div>
-            <!--<div class="category-list">-->
-                <!--<div class="list-group">-->
-                    <!--<span class="list-group-item"> Danh sách </span>-->
-                    <!--<a :href="'#'+item.id" class="list-group-item list-group-item-action" v-for="item in distinctCategory" @click="changeCate(item.id)">-->
-                        <!--<div class="list-group-left">{{ item.value }}</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-            <!--</div>-->
+        <div class="col-md-3">
+            <div class="row">
+                 <h6><p class="list-title"> Danh mục sản phẩm </p></h6>
+            </div>
+            <div class="row list-body"  v-for="item in distinctCategory">
+                <a :href="'#'+item.id" class="list-context" @click="changeCate(item.id)">
+                {{ item.value }}</a>
+            </div>
         </div>
         <div class="col-md-9">
             <div class="row">
@@ -164,7 +147,6 @@
                 context: function (newQuestion, oldQuestion) {
                     switch (newQuestion){
                         case 'welcome':
-                            console.log("sdasdasdsa");
                             this.styleCss.displayTabbar=true;
                             this.styleCss.displayCategory=true;
                             break;
