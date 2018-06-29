@@ -18,6 +18,9 @@ Vue.component('support-email', require('./components/contact/supportEmail.vue'))
 Vue.component('highlights-item-shop', require('./components/shop/highlights-item-shop.vue'));
 Vue.component('view-tab-category', require('./components/shop/viewTabCategory.vue'));
 Vue.component('luxury-item-shop', require('./components/shop/luxury-item-shop.vue'));
+Vue.component('login', require('./components/auth/login.vue'));
+Vue.component('logout', require('./components/auth/logout.vue'));
+
 const app = new Vue({
     el: '#app'
 });
