@@ -26,15 +26,17 @@
                             <div class ="title-item-shop">
                                 <p><b>{{ item.name }}</b></p>
                             </div>
+                            <div class ="rating-item-shop">
+                                <img src="image/star.png" alt="" class="star-rating">
+                                <img src="image/star.png" alt="" class="star-rating">
+                                <img src="image/star.png" alt="" class="star-rating">
+                                <img src="image/star.png" alt="" class="star-rating">
+                                <img src="image/star.png" alt="" class="star-rating">
+                            </div>
                             <div class ="price-item-shop">
                                 <p>{{ item.price }}</p>
                             </div>
-                            <div class ="rating-item-shop">
-                                <img src="image/star.png" alt="" height="30" width="30">
-                                <img src="image/star.png" alt="" height="30" width="30">
-                                <img src="image/star.png" alt="" height="30" width="30">
 
-                            </div>
                         </div>
                     </div>
                 </div>
