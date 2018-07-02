@@ -7,7 +7,7 @@
     <div class="main-login">
         <div id="app">
             <div class="form-for-user">
-                <login></login>
+                <router-view></router-view>
             </div>
         </div>
     </div>

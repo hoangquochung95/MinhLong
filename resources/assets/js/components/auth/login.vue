@@ -24,7 +24,10 @@
 
 <script>
     export default {
-        name: "login"
+        name: "login",
+        mounted:function () {
+            console.log("asd");
+        }
     }
 </script>
 
