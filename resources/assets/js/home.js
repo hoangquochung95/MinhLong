@@ -30,19 +30,16 @@ import register from './components/auth/register.vue';
 const routes=[
     {
         path:'/register',
-        name:'register',
         component: register
     },
     {
         path:'/login',
-        name:'login',
         component:login
     }
 ];
 
 const router=new VueRouter({
     routes,
-    mode: 'history',
 });
 const app = new Vue({
     el: '#app',
