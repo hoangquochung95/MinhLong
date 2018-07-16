@@ -13,5 +13,5 @@
     </div>
 @endsection
 @section('sub_script')
-    <script src="{{ URL::asset('js/home.js') }}"></script>
+    <script src="{{ URL::asset('js/auth.js') }}"></script>
 @endsection
