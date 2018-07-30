@@ -4,8 +4,8 @@
     class="login-container"
 @endsection
 @section('master_container')
-    <div class="main-login">
-        <div id="app">
+    <div class="main-login container-fluid">
+        <div id="app" class="row">
             <div class="form-for-user">
                 <router-view></router-view>
             </div>

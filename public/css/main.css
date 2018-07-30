@@ -384,21 +384,22 @@ background-color: #ccc;
     height: 100%;
 }
 .login-container .main-login{
-    height: 900px;
     background-image: url("../image/login-background.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
-    position: relative;
+    background-attachment: fixed;
+    min-height: 1000px;
 }
 
 .login-container .main-login .form-for-user{
     background: white;
-    width: 35%;
-    padding: 20px;
+    width: 43%;
+    padding: 25px;
     position: absolute;
     top: 17%;
     left: 33%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     color: black;
+    line-height: 15px;
 }

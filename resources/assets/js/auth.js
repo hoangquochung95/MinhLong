@@ -29,6 +29,11 @@ import register from './components/auth/register.vue';
 
 const routes=[
     {
+        path:'/',
+        component: register
+    },
+    {
+        name:'register',
         path:'/register',
         component: register
     },
@@ -45,4 +50,3 @@ const app = new Vue({
     el: '#app',
     router
 });
-console.log(app);

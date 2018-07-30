@@ -17,6 +17,5 @@ Route::get('/', function () {
 Route::get('/product', function () {
     return view('shop.product');
 });
-Route::get('/member', function () {
-    return view('auth.member');
-});
+
+//Route::post('/member','MemberController@register');
